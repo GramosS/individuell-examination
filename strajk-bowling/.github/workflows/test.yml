@@ -27,12 +27,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-          cache-dependency-path: individuell-examination/strajk-bowling/package-lock.json
+          cache-dependency-path: strajk-bowling/package-lock.json
 
       - name: Install dependencies
-        working-directory: individuell-examination/strajk-bowling
+        working-directory: strajk-bowling
         run: npm ci
 
       - name: Run tests
-        working-directory: individuell-examination/strajk-bowling
+        working-directory: strajk-bowling
         run: npm run test:run
