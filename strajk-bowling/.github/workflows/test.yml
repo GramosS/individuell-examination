@@ -1,5 +1,7 @@
 name: Run Tests
 
+# Workflow för att köra enhetstester automatiskt vid push
+
 on:
   push:
     branches:
